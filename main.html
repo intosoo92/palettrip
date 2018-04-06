@@ -8,6 +8,14 @@
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
     <script src="js/ex3.js"></script>
     <script type="text/javascript" src="instafeed.min.js"></script>
+    <script type="text/javascript">
+      var userFeed = new Instafeed({
+      get: 'palettrip',
+      userId: '7203647121',
+      accessToken: '7203647121.680b721.0b26ff98c414467097a94a4652bf5114'
+      });
+      userFeed.run();
+    </script>
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
     <link rel="stylesheet" href="css/ex3.css">
     <link rel="stylesheet" href="headerstyle.css">
@@ -202,14 +210,8 @@
           <img alt="go link" class="icon" src="arrow.png">
         </a>
       </section>
-      <script type="text/javascript">
-        var userFeed = new Instafeed({
-        get: 'user',
-        userId: '7203647121',
-        accessToken: '7203647121.680b721.0b26ff98c414467097a94a4652bf5114'
-        });
-        userFeed.run();
-      </script>
+      <div id="instafeed"></div>
+
     </main>
 
   </body>
